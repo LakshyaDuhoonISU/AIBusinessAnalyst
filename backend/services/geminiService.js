@@ -17,7 +17,7 @@ const axios = require('axios');
 
 // OpenRouter API configuration
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const MODEL = 'google/gemma-4-31b-it:free';
+const MODEL = 'openai/gpt-oss-120b:free';
 
 /**
  * Helper: Prepare a data summary for the AI prompt
