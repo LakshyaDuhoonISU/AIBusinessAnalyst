@@ -1,0 +1,264 @@
+/* ===================================================
+   AI Business Analyst - Global Styles
+   Premium dark theme with glassmorphism effects
+   =================================================== */
+
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* --- CSS Reset & Defaults --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a1a;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Ant Design Theme Overrides --- */
+
+/* Dark background for all Ant components */
+.ant-layout {
+  background: #0d0d1a !important;
+}
+
+.ant-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+.ant-card-head {
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  color: #fff !important;
+}
+
+/* Input styling */
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-input-password,
+.ant-select-selector {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+.ant-input::placeholder,
+.ant-input-affix-wrapper .ant-input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.15) !important;
+}
+
+/* Select dropdown */
+.ant-select-dropdown {
+  background: #1a1a2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-select-item {
+  color: #fff !important;
+}
+
+.ant-select-item-option-active,
+.ant-select-item-option-selected {
+  background: rgba(102, 126, 234, 0.15) !important;
+}
+
+/* Table styling */
+.ant-table {
+  background: transparent !important;
+}
+
+.ant-table-thead > tr > th {
+  background: rgba(255, 255, 255, 0.03) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  font-weight: 600 !important;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+  color: #fff !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Menu styling (Sidebar) */
+.ant-menu-dark {
+  background: transparent !important;
+}
+
+.ant-menu-dark .ant-menu-item {
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 8px !important;
+  margin: 4px 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  color: #fff !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  color: #fff !important;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%) !important;
+}
+
+/* Modal styling */
+.ant-modal-content {
+  background: #1a1a2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.ant-modal-header {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.ant-modal-title {
+  color: #fff !important;
+}
+
+.ant-modal-close {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Form labels */
+.ant-form-item-label > label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Empty state */
+.ant-empty-description {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Statistic */
+.ant-statistic-title {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Progress bar */
+.ant-progress-text {
+  color: #fff !important;
+}
+
+/* Popconfirm */
+.ant-popconfirm {
+  --antd-arrow-background-color: #1a1a2e;
+}
+
+.ant-popover-inner {
+  background: #1a1a2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-popover-title {
+  color: #fff !important;
+}
+
+.ant-popover-inner-content {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Upload dragger */
+.ant-upload-drag {
+  background: rgba(102, 126, 234, 0.05) !important;
+  border: 2px dashed rgba(102, 126, 234, 0.3) !important;
+}
+
+.ant-upload-drag:hover {
+  border-color: #667eea !important;
+}
+
+/* Message */
+.ant-message-notice-content {
+  background: #1a1a2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ant-card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Card hover effect */
+.ant-card-hoverable:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(102, 126, 234, 0.2) !important;
+}
+
+/* --- Tooltip Chart Styling --- */
+.recharts-default-tooltip {
+  background: #1a1a2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+}
+
+/* Typography */
+.ant-typography {
+  color: #fff;
+}
+
+/* Spin */
+.ant-spin-dot-item {
+  background-color: #667eea !important;
+}
+
+/* Divider in menu */
+.ant-menu-item-divider {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  margin: 8px 16px !important;
+}
