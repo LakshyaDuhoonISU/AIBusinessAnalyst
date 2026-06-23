@@ -44,7 +44,7 @@ graph TD
     end
     
     subgraph "External Services"
-        LLM[Google Gemma 4 via OpenRouter]
+        LLM[OpenAI gpt-oss-120b via OpenRouter]
     end
 
     %% Interactions
@@ -71,7 +71,7 @@ graph TD
 | Backend | Node.js, Express.js |
 | Database | MongoDB |
 | Auth | JWT, bcrypt |
-| AI | Google Gemma 4 (via OpenRouter) |
+| AI | OpenAI gpt-oss-120b (via OpenRouter) |
 | ML | Python, scikit-learn, pandas, numpy |
 | Reports | PDFKit |
 
