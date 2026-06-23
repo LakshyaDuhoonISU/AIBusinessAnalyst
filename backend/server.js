@@ -38,11 +38,8 @@ const app = express();
 
 // --- Middleware ---
 
-// Enable CORS for frontend (Vite dev server runs on port 5173)
-app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
-  credentials: true,
-}));
+// Enable CORS for all domains (allows Vercel frontend to communicate)
+app.use(cors());
 
 // Parse JSON request bodies
 app.use(express.json({ limit: '50mb' }));
