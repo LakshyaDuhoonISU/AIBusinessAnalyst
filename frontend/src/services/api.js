@@ -11,7 +11,7 @@ import axios from 'axios';
 
 // Create axios instance with default config
 const API = axios.create({
-  baseURL: 'http://localhost:5001/api',
+  baseURL: 'https://aibusinessanalyst.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },

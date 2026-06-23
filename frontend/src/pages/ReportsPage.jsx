@@ -53,7 +53,7 @@ const ReportsPage = () => {
   };
 
   const handleDownload = (filePath) => {
-    window.open(`http://localhost:5001${filePath}`, '_blank');
+    window.open(`https://aibusinessanalyst.onrender.com${filePath}`, '_blank');
   };
 
   if (loading) {
